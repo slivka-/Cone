@@ -11,12 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * @author Michał Śliwa
  */
+@SuppressWarnings("serial")
 @WebServlet(urlPatterns =
 {
     "/Cone"
 })
 public class Cone extends HttpServlet
 {
+    private static final long serialVersionUID = 1982364982715498L;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
