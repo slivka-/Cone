@@ -2,7 +2,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
-import javafx.geometry.Point3D;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -344,4 +343,37 @@ class ConeModel
             return dist<=R;
         }
     }
+    
+    /**
+     * Represents point in 3D space
+     */
+    class Point3D
+    {
+        private final double x;
+        private final double y;
+        private final double z;
+        
+        public Point3D(double _x, double _y, double _z)
+        {
+            this.x = _x;
+            this.y = _y;
+            this.z = _z;
+        }
+       
+        public double getX()
+        {
+            return x;
+        }
+
+        public double getY()
+        {
+            return y;
+        }
+
+        public double getZ()
+        {
+            return z;
+        }
+    }
 }
+
